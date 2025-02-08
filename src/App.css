@@ -36,3 +36,6 @@
     transform: rotate(360deg);
   }
 }
+* {
+  print-color-adjust: exact !important; /* Override deprecated color-adjust */ /*got this line from the ChatGPT as a fix of deprecated PostCSS*/
+}
