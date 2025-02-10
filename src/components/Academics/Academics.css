@@ -1,87 +1,69 @@
+/* General Styling */
 .academics-container {
-    display: flex;
-    flex-direction: column; /* Stacks items vertically */
-    align-items: center; /* Centers the cards */
-    gap: 20px; /* Adds spacing between cards */
-    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
   }
   
-  
-  .academics-title {
+  /* Title Section */
+  .section-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: white;
+    text-align: center;
+    color: #ff4081;
+    margin-top: 100px;
   }
   
-  .gradient-text {
-    background: linear-gradient(90deg, #a855f7, #ec4899);
-    background-clip: text; /* Standard property */
-    -webkit-background-clip: text; /* Safari & Chrome */
-    -webkit-text-fill-color: transparent;
-  }
-  
-  
-  .academics-subtitle {
+  .section-subtitle {
     font-size: 1.2rem;
-    color: #a0aec0;
+    text-align: center;
+    color: #d1d1d1;
     margin-bottom: 30px;
   }
   
-  .academics-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
-  }
-  
+  /* Academic Card Styling */
   .academic-card {
-    background: #161b22;
-    border-radius: 10px;
+    background: rgba(50, 50, 50, 0.8);  /* ✅ Made the background brighter */
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-    text-align: left;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
     transition: transform 0.3s ease;
+    color: #ffffff;  /* ✅ Text is now fully visible */
   }
   
   .academic-card:hover {
     transform: translateY(-5px);
+    background: rgba(70, 70, 70, 0.9);  /* ✅ Slight brightness on hover */
   }
   
-  .academic-title {
+  /* Text Colors */
+  .academic-card h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: white;
+    color: #ffffff; /* ✅ Increased contrast for readability */
   }
   
-  .academic-location, .academic-date, .academic-gpa {
-    display: flex;
-    align-items: center;
+  .academic-card p {
     font-size: 1rem;
-    color: #cbd5e1;
-    margin-top: 5px;
+    color: #e0e0e0;
   }
   
-  .icon {
+  /* Icons Styling */
+  .academic-card .icon {
+    color: #ff4081;
     margin-right: 8px;
-    color: #ec4899;
   }
   
-  .academic-details {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
-  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+      margin-top: 80px;
+    }
   
-  .academic-details li {
-    font-size: 0.95rem;
-    color: #a0aec0;
-    margin-top: 5px;
-  }
-  
-  .academic-university {
-    font-size: 1rem;
-    font-style: italic;
-    color: #cbd5e1;
-    margin-top: 10px;
+    .academic-card {
+      padding: 15px;
+    }
   }
   

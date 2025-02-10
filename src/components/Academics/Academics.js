@@ -1,75 +1,49 @@
 import React from "react";
-import { FaMapMarkerAlt, FaCalendarAlt, FaAward } from "react-icons/fa";
-import "./Academics.css"; // Ensure this CSS file exists
+import "./Academics.css";
 
 const academicsData = [
   {
-    title: "Bachelor's Transfer Program",
-    location: "Berlin, Germany",
-    date: "2024 - Present",
-    gpa: "In Progress",
-    details: [
-      "International Academic Transfer",
-      "Continuing Advanced Studies",
-    ],
-    university: "IU University, Berlin",
+    title: "Bachelor's Technology",
+    duration: "2024 - Present",
+    cgpa: "In Progress",
+    details: ["Computer Science and Technology", "Splz. under AI and Ml"],
+    university: "Presidency University, Bengaluru",
   },
   {
-    title: "Bachelor's Initial Program",
-    location: "Bangalore, India",
-    date: "2021 - 2024",
-    gpa: "8.1/10",
-    details: [
-      "Completed Initial Coursework",
-      "Academic Credit Transfer Preparation",
-    ],
-    university: "Presidency University, Bangalore",
+    title: "Pre-University College",
+    duration: "2021 - 2024",
+    cgpa: "8.5",
+    details: ["Physics, Maths, Chemistry, Computer Science", "Pre-University Completion"],
+    university: "MES Kishora Kendra, Bengaluru",
   },
   {
-    title: "High School Diploma",
-    location: "Kathmandu, Nepal",
-    date: "2019 - 2021",
-    gpa: "3.36/4.0",
-    details: [
-      "Physics, Chemistry, Maths and Computer Science",
-      "Secondary Education Completion",
-    ],
-    university: "KV Kathmandu",
+    title: "Secondary High School",
+    duration: "2019 - 2021",
+    cgpa: "9.09",
+    details: ["Based on NCERT", "Secondary Education Completion"],
+    university: "Nelamangala, Bengaluru",
   },
 ];
 
 const Academics = () => {
   return (
     <div className="academics-container">
-      <h2 className="academics-title">
-        <span className="gradient-text">Academic Journey</span>
-      </h2>
-      <p className="academics-subtitle">
-        A chronicle of learning, growth, and academic exploration
-      </p>
+      <h2 className="section-title">Academic Journey</h2>
+      <p className="section-subtitle">A chronicle of learning, growth, and academic exploration</p>
 
-      <div className="academics-grid">
-        {academicsData.map((item, index) => (
-          <div key={index} className="academic-card">
-            <h3 className="academic-title">{item.title}</h3>
-            <p className="academic-location">
-              <FaMapMarkerAlt className="icon" /> {item.location}
-            </p>
-            <p className="academic-date">
-              <FaCalendarAlt className="icon" /> {item.date}
-            </p>
-            <p className="academic-gpa">
-              <FaAward className="icon" /> <strong>GPA:</strong> {item.gpa}
-            </p>
-            <ul className="academic-details">
-              {item.details.map((detail, i) => (
-                <li key={i}>• {detail}</li>
-              ))}
-            </ul>
-            <p className="academic-university"><em>{item.university}</em></p>
-          </div>
-        ))}
-      </div>
+      {academicsData.map((academic, index) => (
+        <div key={index} className="academic-card">
+          <h3>{academic.title}</h3>
+          <p>📅 {academic.duration}</p>
+          <p>🎓 <strong>CGPA:</strong> {academic.cgpa}</p>  
+          <ul>
+            {academic.details.map((item, idx) => (
+              <li key={idx}>• {item}</li>
+            ))}
+          </ul>
+          <em>{academic.university}</em>
+        </div>
+      ))}
     </div>
   );
 };
