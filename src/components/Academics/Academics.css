@@ -1,69 +1,21 @@
-/* General Styling */
 .academics-container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
+    padding: 50px;
+    background: #0d0d0d;
+    color: white;
   }
   
-  /* Title Section */
   .section-title {
-    font-size: 2.5rem;
-    font-weight: bold;
     text-align: center;
-    color: #ff4081;
-    margin-top: 100px;
-  }
-  
-  .section-subtitle {
-    font-size: 1.2rem;
-    text-align: center;
-    color: #d1d1d1;
+    font-size: 2em;
+    color: #6c63ff;
     margin-bottom: 30px;
   }
   
-  /* Academic Card Styling */
-  .academic-card {
-    background: rgba(50, 50, 50, 0.8);  /* ✅ Made the background brighter */
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-    color: #ffffff;  /* ✅ Text is now fully visible */
-  }
-  
-  .academic-card:hover {
-    transform: translateY(-5px);
-    background: rgba(70, 70, 70, 0.9);  /* ✅ Slight brightness on hover */
-  }
-  
-  /* Text Colors */
-  .academic-card h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff; /* ✅ Increased contrast for readability */
-  }
-  
-  .academic-card p {
-    font-size: 1rem;
-    color: #e0e0e0;
-  }
-  
-  /* Icons Styling */
-  .academic-card .icon {
-    color: #ff4081;
-    margin-right: 8px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .section-title {
-      font-size: 2rem;
-      margin-top: 80px;
-    }
-  
-    .academic-card {
-      padding: 15px;
-    }
+  .timeline-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
   }
   
