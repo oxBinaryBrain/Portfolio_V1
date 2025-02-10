@@ -1,0 +1,87 @@
+.academics-container {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers the cards */
+    gap: 20px; /* Adds spacing between cards */
+    width: 100%;
+  }
+  
+  
+  .academics-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(90deg, #a855f7, #ec4899);
+    background-clip: text; /* Standard property */
+    -webkit-background-clip: text; /* Safari & Chrome */
+    -webkit-text-fill-color: transparent;
+  }
+  
+  
+  .academics-subtitle {
+    font-size: 1.2rem;
+    color: #a0aec0;
+    margin-bottom: 30px;
+  }
+  
+  .academics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .academic-card {
+    background: #161b22;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .academic-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .academic-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .academic-location, .academic-date, .academic-gpa {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #cbd5e1;
+    margin-top: 5px;
+  }
+  
+  .icon {
+    margin-right: 8px;
+    color: #ec4899;
+  }
+  
+  .academic-details {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .academic-details li {
+    font-size: 0.95rem;
+    color: #a0aec0;
+    margin-top: 5px;
+  }
+  
+  .academic-university {
+    font-size: 1rem;
+    font-style: italic;
+    color: #cbd5e1;
+    margin-top: 10px;
+  }
+  

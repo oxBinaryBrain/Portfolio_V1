@@ -4,7 +4,8 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
-import Contact from "./components/Contact/Contact";  
+import Contact from "./components/Contact/Contact";
+import Academics from "./components/Academics/Academics";  // ✅ Added Academics Component
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import {
@@ -35,12 +36,13 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
-        <Routes>
+        <Routes>  
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/contact" element={<Contact />} />  {/* ✅ Added Contact Page */}
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/academics" element={<Academics />} />  {/* ✅ Added Academics Page */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
