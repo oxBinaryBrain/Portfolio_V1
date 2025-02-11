@@ -68,7 +68,7 @@ function Projects() {
               title="CC_Fraud_Detection"
               description="This is a simple machine learning model which analyzes whether a credit card transaction is fraudlent or not. The dataset is downloaded from kaggle, check the readme for link to dataset."
               ghLink="https://github.com/oxBinaryBrain/CC-Fraud-Detection"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=xoxo" 
             />
           </Col>
 
@@ -79,7 +79,7 @@ function Projects() {
               title="Paddle Detection"
               description="Object Detection toolkit based on PaddlePaddle. It supports object detection, instance segmentation, multiple object tracking and real-time multi-person keypoint detection."
               ghLink="https://github.com/oxBinaryBrain/PaddleDetection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              // demoLink="https://xoxo.com"     
             />
           </Col>
         </Row>

@@ -11,7 +11,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
-  AiOutlineMail, // Added mail icon for contact section
+  AiOutlineMail, 
 } from "react-icons/ai";
 
 function NavBar() {

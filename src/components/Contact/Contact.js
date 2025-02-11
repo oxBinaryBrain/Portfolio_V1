@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"; // Importing icons
-import "./Contact.css"; // Ensure this CSS file is created
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"; 
+import "./Contact.css"; 
 
 const Contact = () => {
   const [formData, setFormData] = useState({
