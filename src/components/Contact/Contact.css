@@ -1,7 +1,7 @@
 .get-in-touch {
   text-align: center;
   padding: 50px 20px;
-  background: #090f20; /* Dark theme background */
+  background: #090f20; 
 }
 
 
@@ -13,8 +13,8 @@
 
 .gradient-text {
   background: linear-gradient(90deg, #3b82f6, #ec4899);
-  background-clip: text;  /* Standard Property */
-  -webkit-background-clip: text; /* Webkit for Safari & Chrome */
+  background-clip: text; 
+  -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
 }
 

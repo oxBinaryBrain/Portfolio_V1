@@ -1,57 +1,316 @@
+
+body {
+  scroll-padding-top: 80px; /* Adjust based on navbar height */
+}
+
+
+.academic-page {
+  padding-top: 250px; /* Increased further to ensure navbar does not overlap */
+  min-height: 100vh;
+  width: 100%;
+  background: var(--section-background-color);
+  position: relative;
+  z-index: 1;
+}
+
 .academics-container {
-    padding: 50px;
-    background: rgba(9, 15, 32, 0.7); /* Semi-transparent dark background */
-    color: white;
-    backdrop-filter: blur(10px); /* Glassmorphism blur effect */
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
-    margin: 20px;
+  position: relative;
+  padding: 0 20px;
+  color: #ffffff;
+  width: 100%;
+  min-height: calc(100vh - 250px);
+  margin-top: 80px; /* Increased further */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #ffffff;
+  position: relative;
+  z-index: 11;
+}
+
+#tsparticles {
+  position: fixed !important;
+  z-index: 0;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .academic-page {
+    padding-top: 300px; /* Adjusts for smaller screens */
   }
-  
+}
+
+
+.vertical-timeline {
+  width: 95%;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 12;
+}
+
+.vertical-timeline::before {
+  background: #6c63ff !important;
+  width: 3px;
+}
+
+.vertical-timeline-element {
+  margin: 2em 0;
+}
+
+.vertical-timeline-element-content {
+  background: rgba(33, 33, 33, 0.9) !important;
+  color: #ffffff !important;
+  padding: 2em !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 15px !important;
+}
+
+.timeline-date {
+  color: #ffffff !important;
+  opacity: 0.9;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0 1.5em !important;
+}
+
+.timeline-content {
+  padding: 0;
+}
+
+.vertical-timeline-element-title {
+  color: #6c63ff;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.vertical-timeline-element-subtitle {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.cgpa-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: rgba(108, 99, 255, 0.15);
+  border: 1px solid rgba(108, 99, 255, 0.3);
+  border-radius: 20px;
+  color: #6c63ff;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.details-section {
+  margin: 20px 0;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.details-section h5 {
+  color: #6c63ff;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.details-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.details-section li {
+  color: #ffffff;
+  margin: 12px 0;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.5;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.details-section li:before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #6c63ff;
+  font-size: 1.2rem;
+}
+
+.vertical-timeline-element-icon {
+  background: #6c63ff !important;
+}
+
+.academic-page {
+  padding-top: 200px; /* Increased padding to avoid navbar overlap */
+  min-height: 100vh;
+  width: 100%;
+  background: var(--section-background-color);
+  position: relative;
+  z-index: 1; /* Ensures it stays above the background */
+}
+
+.academics-container {
+  position: relative;
+  padding: 0 20px;
+  color: #ffffff;
+  width: 100%;
+  min-height: calc(100vh - 200px); /* Adjusted height */
+  margin-top: 60px; /* Added margin to prevent overlap */
+}
+
+.academics-content {
+  position: relative;
+  z-index: 10;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #ffffff;
+  position: relative;
+  z-index: 11;
+}
+
+#tsparticles {
+  position: fixed !important;
+  z-index: 0;
+}
+
+.vertical-timeline {
+  width: 95%;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 12;
+}
+
+.vertical-timeline::before {
+  background: #6c63ff !important;
+  width: 3px;
+}
+
+.vertical-timeline-element {
+  margin: 2em 0;
+}
+
+.vertical-timeline-element-content {
+  background: rgba(33, 33, 33, 0.9) !important;
+  color: #ffffff !important;
+  padding: 2em !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 15px !important;
+}
+
+.timeline-date {
+  color: #ffffff !important;
+  opacity: 0.9;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0 1.5em !important;
+}
+
+.timeline-content {
+  padding: 0;
+}
+
+.vertical-timeline-element-title {
+  color: #6c63ff;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.vertical-timeline-element-subtitle {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.cgpa-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: rgba(108, 99, 255, 0.15);
+  border: 1px solid rgba(108, 99, 255, 0.3);
+  border-radius: 20px;
+  color: #6c63ff;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.details-section {
+  margin: 20px 0;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.details-section h5 {
+  color: #6c63ff;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.details-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.details-section li {
+  color: #ffffff;
+  margin: 12px 0;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.5;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.details-section li:before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #6c63ff;
+  font-size: 1.2rem;
+}
+
+.vertical-timeline-element-icon {
+  background: #6c63ff !important;
+}
+
+@media (max-width: 768px) {
   .section-title {
-    text-align: center;
-    font-size: 2em;
-    color: #6c63ff;
-    margin-bottom: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 2rem;
   }
   
-  /* Timeline Card Styling */
+  .vertical-timeline-element-title {
+    font-size: 1.3rem;
+  }
+  
+  .vertical-timeline-element-subtitle {
+    font-size: 1rem;
+  }
+
   .vertical-timeline-element-content {
-    background: rgba(30, 30, 47, 0.5); /* Glassmorphism effect */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
-    padding: 20px;
+    padding: 1.5em !important;
   }
-  
-  /* Timeline Dots */
-  .vertical-timeline-element-icon {
-    background: linear-gradient(135deg, #6c63ff, #ff6b6b);
-    box-shadow: 0 0 10px rgba(108, 99, 255, 0.8);
+
+  .details-section li {
+    font-size: 0.95rem;
   }
-  
-  /* Timeline Logo */
-  .timeline-logo {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: white;
-    padding: 5px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
-  }
-  
-  /* Particle Background Container */
-  .particles-bg {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  
+}
