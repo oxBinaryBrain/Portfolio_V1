@@ -1,316 +1,53 @@
-
-body {
-  scroll-padding-top: 80px; /* Adjust based on navbar height */
-}
-
-
-.academic-page {
-  padding-top: 250px; /* Increased further to ensure navbar does not overlap */
-  min-height: 100vh;
-  width: 100%;
-  background: var(--section-background-color);
-  position: relative;
-  z-index: 1;
-}
-
+/* Academics.css */
 .academics-container {
   position: relative;
-  padding: 0 20px;
-  color: #ffffff;
-  width: 100%;
-  min-height: calc(100vh - 250px);
-  margin-top: 80px; /* Increased further */
-}
-
-.section-title {
+  padding: 100px 20px 50px; /* Adds spacing to prevent navbar overlap */
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 50px;
-  color: #ffffff;
-  position: relative;
-  z-index: 11;
-}
-
-#tsparticles {
-  position: fixed !important;
-  z-index: 0;
-}
-
-/* Responsive Fix */
-@media (max-width: 768px) {
-  .academic-page {
-    padding-top: 300px; /* Adjusts for smaller screens */
-  }
-}
-
-
-.vertical-timeline {
-  width: 95%;
-  max-width: 1170px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 12;
-}
-
-.vertical-timeline::before {
-  background: #6c63ff !important;
-  width: 3px;
-}
-
-.vertical-timeline-element {
-  margin: 2em 0;
-}
-
-.vertical-timeline-element-content {
-  background: rgba(33, 33, 33, 0.9) !important;
-  color: #ffffff !important;
-  padding: 2em !important;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2) !important;
-  border-radius: 15px !important;
-}
-
-.timeline-date {
-  color: #ffffff !important;
-  opacity: 0.9;
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin: 0 1.5em !important;
-}
-
-.timeline-content {
-  padding: 0;
-}
-
-.vertical-timeline-element-title {
-  color: #6c63ff;
-  font-size: 1.5rem;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-.vertical-timeline-element-subtitle {
-  color: #ffffff;
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  opacity: 0.9;
-}
-
-.cgpa-badge {
-  display: inline-block;
-  padding: 8px 16px;
-  background: rgba(108, 99, 255, 0.15);
-  border: 1px solid rgba(108, 99, 255, 0.3);
-  border-radius: 20px;
-  color: #6c63ff;
-  font-weight: bold;
-  margin: 15px 0;
-}
-
-.details-section {
-  margin: 20px 0;
-  background: rgba(0, 0, 0, 0.2);
-  padding: 15px 20px;
-  border-radius: 10px;
-}
-
-.details-section h5 {
-  color: #6c63ff;
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.details-section ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.details-section li {
-  color: #ffffff;
-  margin: 12px 0;
-  padding-left: 25px;
-  position: relative;
-  line-height: 1.5;
-  font-size: 1rem;
-  opacity: 0.9;
-}
-
-.details-section li:before {
-  content: "▹";
-  position: absolute;
-  left: 0;
-  color: #6c63ff;
-  font-size: 1.2rem;
-}
-
-.vertical-timeline-element-icon {
-  background: #6c63ff !important;
-}
-
-.academic-page {
-  padding-top: 200px; /* Increased padding to avoid navbar overlap */
+  color: white;
   min-height: 100vh;
-  width: 100%;
-  background: var(--section-background-color);
-  position: relative;
-  z-index: 1; /* Ensures it stays above the background */
 }
 
-.academics-container {
-  position: relative;
-  padding: 0 20px;
-  color: #ffffff;
-  width: 100%;
-  min-height: calc(100vh - 200px); /* Adjusted height */
-  margin-top: 60px; /* Added margin to prevent overlap */
-}
-
-.academics-content {
-  position: relative;
-  z-index: 10;
-}
-
-.section-title {
-  text-align: center;
+.academics-title {
   font-size: 2.5rem;
-  margin-bottom: 50px;
-  color: #ffffff;
-  position: relative;
-  z-index: 11;
+  margin-bottom: 30px;
 }
 
-#tsparticles {
-  position: fixed !important;
-  z-index: 0;
+.academics-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-.vertical-timeline {
-  width: 95%;
-  max-width: 1170px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 12;
-}
-
-.vertical-timeline::before {
-  background: #6c63ff !important;
-  width: 3px;
-}
-
-.vertical-timeline-element {
-  margin: 2em 0;
-}
-
-.vertical-timeline-element-content {
-  background: rgba(33, 33, 33, 0.9) !important;
-  color: #ffffff !important;
-  padding: 2em !important;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2) !important;
-  border-radius: 15px !important;
-}
-
-.timeline-date {
-  color: #ffffff !important;
-  opacity: 0.9;
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin: 0 1.5em !important;
-}
-
-.timeline-content {
-  padding: 0;
-}
-
-.vertical-timeline-element-title {
-  color: #6c63ff;
-  font-size: 1.5rem;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-.vertical-timeline-element-subtitle {
-  color: #ffffff;
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  opacity: 0.9;
-}
-
-.cgpa-badge {
-  display: inline-block;
-  padding: 8px 16px;
-  background: rgba(108, 99, 255, 0.15);
-  border: 1px solid rgba(108, 99, 255, 0.3);
-  border-radius: 20px;
-  color: #6c63ff;
-  font-weight: bold;
-  margin: 15px 0;
-}
-
-.details-section {
-  margin: 20px 0;
-  background: rgba(0, 0, 0, 0.2);
-  padding: 15px 20px;
+.academic-card {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  width: 320px;
+  text-align: left;
 }
 
-.details-section h5 {
-  color: #6c63ff;
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+.academic-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-.details-section ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.details-section li {
-  color: #ffffff;
-  margin: 12px 0;
-  padding-left: 25px;
-  position: relative;
-  line-height: 1.5;
-  font-size: 1rem;
-  opacity: 0.9;
-}
-
-.details-section li:before {
-  content: "▹";
-  position: absolute;
-  left: 0;
-  color: #6c63ff;
+.academic-card h3 {
   font-size: 1.2rem;
+  margin-bottom: 8px;
+  font-weight: normal;
+  color: #d4bfff;
 }
 
-.vertical-timeline-element-icon {
-  background: #6c63ff !important;
+.academic-duration,
+.academic-cgpa {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2rem;
-  }
-  
-  .vertical-timeline-element-title {
-    font-size: 1.3rem;
-  }
-  
-  .vertical-timeline-element-subtitle {
-    font-size: 1rem;
-  }
-
-  .vertical-timeline-element-content {
-    padding: 1.5em !important;
-  }
-
-  .details-section li {
-    font-size: 0.95rem;
-  }
+.academic-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
 }
